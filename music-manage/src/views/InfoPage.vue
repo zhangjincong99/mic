@@ -4,7 +4,9 @@
       <el-card shadow="hover" :body-style="{ padding: '0px' }">
         <div class="card-content">
           <div class="card-left">
-            <el-icon><user /></el-icon>
+            <el-icon>
+              <user />
+            </el-icon>
           </div>
           <div class="card-right">
             <div class="card-num">{{ userCount }}</div>
@@ -17,7 +19,9 @@
       <el-card shadow="hover" :body-style="{ padding: '0px' }">
         <div class="card-content">
           <div class="card-left">
-            <el-icon><headset /></el-icon>
+            <el-icon>
+              <headset />
+            </el-icon>
           </div>
           <div class="card-right">
             <div class="card-num">{{ songCount }}</div>
@@ -30,7 +34,9 @@
       <el-card shadow="hover" :body-style="{ padding: '0px' }">
         <div class="card-content">
           <div class="card-left">
-            <el-icon><mic /></el-icon>
+            <el-icon>
+              <mic />
+            </el-icon>
           </div>
           <div class="card-right">
             <div class="card-num">{{ singerCount }}</div>
@@ -43,7 +49,9 @@
       <el-card shadow="hover" :body-style="{ padding: '0px' }">
         <div class="card-content">
           <div class="card-left">
-            <el-icon><document /></el-icon>
+            <el-icon>
+              <document />
+            </el-icon>
           </div>
           <div class="card-right">
             <div class="card-num">{{ songListCount }}</div>
@@ -100,6 +108,7 @@ const userSex = reactive({
           name: "女",
         },
       ],
+      color: ["#00BFFF", "#FFB6C1"], // 设置颜色
     },
   ],
 });
@@ -115,7 +124,8 @@ const songStyle = reactive({
     {
       data: [0, 0, 0, 0, 0, 0, 0],
       type: "bar",
-      barWidth: "20%",
+      barWidth: "50%",
+      color: ["#008B8B"], // 设置颜色
     },
   ],
 });
@@ -123,16 +133,8 @@ const singerSex = reactive({
   series: [
     {
       type: "pie",
-      data: [
-        {
-          value: 0,
-          name: "男",
-        },
-        {
-          value: 0,
-          name: "女",
-        },
-      ],
+      data: [],
+      color: ["#00BFFF", "#FFB6C1","#00FA9A","#FFDEAD"], // 设置颜色
     },
   ],
 });
@@ -157,14 +159,16 @@ const country = reactive({
     {
       data: [0, 0, 0, 0, 0, 0, 0, 0],
       type: "bar",
-      barWidth: "20%",
+      barWidth: "50%",
+      color: ["#00BFFF"], // 设置颜色
     },
   ],
 });
 
+// 修改后的
 function setSex(sex, arr) {
   let value = 0;
-  const name = sex === 0 ? "男" : "女";
+  const name = sex === 0 ? "男" : sex === 1 ? "女" : sex === 2 ? "组合" : "未知";
   for (let item of arr) {
     if (sex === item.sex) {
       value++;
@@ -172,9 +176,16 @@ function setSex(sex, arr) {
   }
   return { value, name };
 }
+
+
+
 HttpManager.getAllUser().then((res) => {
   const result = res as ResponseBody;
   userCount.value = result.data.length;
+
+  // 清空数组中的数据
+  userSex.series[0].data = [];
+
   userSex.series[0].data.push(setSex(0, result.data));
   userSex.series[0].data.push(setSex(1, result.data));
 
@@ -204,10 +215,17 @@ HttpManager.getSongList().then((res) => {
 HttpManager.getAllSinger().then((res) => {
   const result = res as ResponseBody;
   singerCount.value = result.data.length;
-  singerSex.series[0].data.push(setSex(0, result.data));
-  singerSex.series[0].data.push(setSex(1, result.data));
+  singerSex.series[0].data = []; // 清空数组中的数据
+
+  singerSex.series[0].data.push(setSex(0, result.data)); // 男
+  singerSex.series[0].data.push(setSex(1, result.data)); // 女
+  singerSex.series[0].data.push(setSex(2, result.data)); // 组合
+  singerSex.series[0].data.push(setSex(3, result.data)); // 未知
+
   const singerSexChart = echarts.init(document.getElementById("singerSex"));
   singerSexChart.setOption(singerSex);
+
+
 
   for (let item of result.data) {
     for (let i = 0; i < country.xAxis.data.length; i++) {
@@ -250,6 +268,7 @@ h3 {
   margin: 10px 0;
   text-align: center;
 }
+
 .cav-info {
   border-radius: 6px;
   overflow: hidden;

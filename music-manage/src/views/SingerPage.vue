@@ -5,7 +5,7 @@
       <el-input placeholder="筛选歌手" v-model="searchWord"></el-input>
       <el-button type="primary" @click="centerDialogVisible = true">添加歌手</el-button>
     </div>
-    <el-table height="550px" border size="small" :data="data" @selection-change="handleSelectionChange">
+    <el-table height="665px" border size="small" :data="data" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="40" align="center"></el-table-column>
       <el-table-column label="ID" prop="id" width="50" align="center"></el-table-column>
       <el-table-column label="歌手图片" prop="pic" width="110" align="center">
@@ -37,11 +37,13 @@
           </p>
         </template>
       </el-table-column>
+
       <el-table-column label="歌曲管理" width="120" align="center">
         <template v-slot="scope">
           <el-button @click="goSongPage(scope.row)">歌曲管理</el-button>
         </template>
       </el-table-column>
+      
       <el-table-column label="操作" width="160" align="center">
         <template v-slot="scope">
           <el-button @click="editRow(scope.row)">编辑</el-button>

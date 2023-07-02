@@ -37,6 +37,7 @@ export default defineComponent({
       username: [{ required: true, message: "请输入用户名", trigger: "blur" }],
       password: [{ required: true, message: "请输入密码", trigger: "blur" }],
     });
+    // 提交
     async function submitForm() {
       let params = new URLSearchParams();
       params.append("name", ruleForm.username);

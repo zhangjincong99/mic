@@ -59,6 +59,7 @@ export default defineComponent({
       collapse.value = !collapse.value;
       emitter.emit("collapse", collapse.value);
     }
+    
     // 用户名下拉菜单选择事件
     function handleCommand(command) {
       if (command === "loginout") {

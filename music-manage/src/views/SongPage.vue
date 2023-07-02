@@ -4,14 +4,13 @@
       {{ item.name }}
     </el-breadcrumb-item>
   </el-breadcrumb>
-
   <div class="container">
     <div class="handle-box">
       <el-button @click="deleteAll">批量删除</el-button>
       <el-input v-model="searchWord" placeholder="筛选关键词"></el-input>
       <el-button type="primary" @click="centerDialogVisible = true">添加歌曲</el-button>
     </div>
-    <el-table height="550px" border size="small" :data="data" @selection-change="handleSelectionChange">
+    <el-table height="620px" border size="small" :data="data" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="40"></el-table-column>
       <el-table-column label="ID" prop="id" width="50" align="center"></el-table-column>
       <el-table-column label="歌手图片" width="110" align="center">
@@ -248,7 +247,7 @@ export default defineComponent({
     }
 
     /**
-     * 添加
+     * 添加  重点
      */
     const centerDialogVisible = ref(false);
     const registerForm = reactive({

@@ -1,8 +1,13 @@
 <template>
-  <audio controls="controls" preload="true" v-if="url" :ref="player" :src="attachImageUrl(url)" @canplay="startPlay" @ended="ended"></audio>
+  <!-- <audio controls="controls" preload="true" v-if="url" :ref="player" :src="attachImageUrl(url)" @canplay="startPlay" -->
+  <audio :controls="true" preload="true" v-if="url" :ref="player" :src="attachImageUrl(url)" @canplay="startPlay"
+    @ended="ended"></audio>
+
+  <!-- @ended="ended"></audio> -->
 </template>
 
 <script lang="ts">
+import { nextTick } from 'vue';
 import { defineComponent, getCurrentInstance, computed, watch, ref } from "vue";
 import { useStore } from "vuex";
 import { HttpManager } from "@/api";
@@ -25,13 +30,24 @@ export default defineComponent({
 
     // 开始/暂停
     function togglePlay() {
-      isPlay.value ? divRef.value.play() : divRef.value.pause();
+      nextTick(() => {
+        const audioElement = divRef.value;
+        if (audioElement) {
+          isPlay.value ? audioElement.play() : audioElement.pause();
+        }
+      });
     }
 
     // 获取歌曲链接后准备播放
     function startPlay() {
-      divRef.value.play();
+      nextTick(() => {
+        const audioElement = divRef.value;
+        if (audioElement) {
+          audioElement.play();
+        }
+      });
     }
+
     // 音乐播放结束时触发
     function ended() {
       proxy.$store.commit("setIsPlay", false);

@@ -41,12 +41,15 @@ emitter.on("collapse", (msg) => {
 
 <style scoped>
 .sidebar {
-  display: block;
+  display: block;  
+  /* 块状 */
   position: absolute;
+  /*绝对中间*/
   left: 0;
   top: 60px;
   bottom: 0;
   overflow-y: scroll;
+
 }
 
 .sidebar::-webkit-scrollbar {

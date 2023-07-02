@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <SongAudio/> -->
     <router-view></router-view>
   </div>
 </template>
@@ -16,4 +17,9 @@ if (sessionStorage.getItem("dataStore")) {
 window.addEventListener("beforeunload", () => {
   sessionStorage.setItem("dataStore", JSON.stringify(proxy.$store.state));
 });
+
+// import SongAudio from './components/SongAudio.vue';
+//   Comments:{
+//     SongAudio
+//   }
 </script>

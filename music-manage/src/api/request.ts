@@ -29,7 +29,7 @@ axios.interceptors.response.use(
           router.replace({
             path: "/",
             query: {
-              // redirect: router.currentRoute.fullPath
+              // redirect: router.currentRoute.fullPath  
             },
           });
           break;
@@ -40,6 +40,7 @@ axios.interceptors.response.use(
             router.replace({
               path: "/",
               query: {
+                // 如果没找到把这个地址存起来
                 // redirect: router.currentRoute.fullPath
               },
             });
