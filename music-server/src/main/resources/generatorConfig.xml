@@ -14,7 +14,7 @@
     </commentGenerator>
 
     <!-- 数据库的相关配置 -->
-    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/tp_music?serverTimezone=Asia/Shanghai&amp;nullCatalogMeansCurrent=true" userId="root" password="1026"/>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/tp_music?serverTimezone=Asia/Shanghai&amp;nullCatalogMeansCurrent=true" userId="root" password="password"/>
 
     <javaTypeResolver>
       <property name="forceBigDecimals" value="false"/>
@@ -49,3 +49,19 @@
 
   </context>
 </generatorConfiguration>
+
+<!--classPathEntry：指定本地数据库驱动程序的路径，用于生成代码时连接数据库。-->
+
+<!--context：上下文配置，指定了代码生成的相关信息。-->
+
+<!--commentGenerator：注释生成器配置，用于生成注释的样式和规则。-->
+
+<!--jdbcConnection：数据库连接配置，指定了数据库的驱动类、连接URL、用户名和密码。-->
+
+<!--javaModelGenerator：实体类生成器配置，指定了实体类的包名和存放路径。-->
+
+<!--sqlMapGenerator：Mapper XML生成器配置，指定了Mapper XML文件的包名和存放路径。-->
+
+<!--javaClientGenerator：Mapper接口生成器配置，指定了Mapper接口的包名和存放路径。-->
+
+<!--table：表配置，指定了要生成代码的表名、对应的领域对象名以及是否生成查询方法等。-->

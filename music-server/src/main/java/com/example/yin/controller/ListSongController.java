@@ -16,6 +16,18 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+/*
+addListSong 方法用于向歌单中添加歌曲。
+deleteListSong 方法用于从歌单中删除歌曲。
+listSongOfSongId 方法用于返回指定歌单 ID 的歌曲列表。
+updateListSongMsg 方法用于更新歌单中歌曲的信息。
+这些方法通过调用 ListSongServiceImpl 的相应方法来处理歌单与歌曲的关联关系。
+
+在这些方法中，通过 HttpServletRequest 对象获取请求参数，然后构建相应的 ListSong 对象，并调用 listSongService 的方法进行处理。处理结果根据操作成功与否返回相应的消息对象。
+
+这个控制器类负责接收前端请求并调用对应的服务方法进行处理，用于实现歌单与歌曲的管理和操作。
+ */
+
 @RestController
 public class ListSongController {
 

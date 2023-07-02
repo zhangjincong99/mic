@@ -26,6 +26,30 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 
+
+/*
+SongController 是一个控制器类，用于处理与歌曲相关的请求。以下是该类中的方法的解释：
+
+addSong 方法用于添加歌曲。它接收一个 HttpServletRequest 对象和一个 MultipartFile 对象作为参数，分别表示请求对象和上传的歌曲文件。方法通过解析请求参数和文件信息，创建一个 Song 对象，并调用 songService 的 addSong 方法将歌曲信息添加到数据库中。如果添加成功，则返回成功消息；否则，返回失败消息。
+
+deleteSong 方法用于删除歌曲。它接收一个 HttpServletRequest 对象作为参数，从请求参数中获取要删除的歌曲的 ID。方法调用 songService 的 deleteSong 方法删除指定 ID 的歌曲。如果删除成功，则返回成功消息；否则，返回失败消息。
+
+allSong 方法用于获取所有歌曲。它不接收任何参数，直接调用 songService 的 allSong 方法获取所有歌曲的信息，并返回成功消息。
+
+songOfId 方法用于获取指定 ID 的歌曲信息。它接收一个 HttpServletRequest 对象作为参数，从请求参数中获取要获取的歌曲的 ID。方法调用 songService 的 songOfId 方法获取指定 ID 的歌曲信息，并返回成功消息。
+
+songOfSingerId 方法用于获取指定歌手 ID 的歌曲信息。它接收一个 HttpServletRequest 对象作为参数，从请求参数中获取要获取的歌手的 ID。方法调用 songService 的 songOfSingerId 方法获取指定歌手 ID 的歌曲信息，并返回成功消息。
+
+songOfSingerName 方法用于获取指定歌手名的歌曲信息。它接收一个 HttpServletRequest 对象作为参数，从请求参数中获取要获取的歌手名。方法调用 songService 的 songOfSingerName 方法获取满足条件的歌曲信息，并返回成功消息。
+
+updateSongMsg 方法用于更新歌曲信息。它接收一个 HttpServletRequest 对象作为参数，从请求参数中获取要更新的歌曲信息。方法创建一个 Song 对象，设置要更新的歌曲信息，并调用 songService 的 updateSongMsg 方法进行更新。如果更新成功，则返回成功消息；否则，返回失败消息。
+
+updateSongPic 方法用于更新歌曲图片。它接收一个 MultipartFile 对象和一个整数参数 id，分别表示上传的图片文件和要更新的歌曲的 ID。方法通过解析文件信息，将图片文件保存到指定路径，并创建一个 Song 对象，设置要更新的歌曲的 ID 和图片路径，然后调用 songService 的 updateSongPic 方法进行更新。如果更新成功，则返回成功消息；否则，返回失败消息。
+
+updateSongUrl 方法用于更新歌曲文件。它接收一个 MultipartFile 对象和一个整数参数 id，分别表示上传的歌曲文件和要更新的歌曲的 ID。方法通过解析文件信息，将歌曲文件保存到指定路径，并创建一个 Song 对象，设置要更新的歌曲的 ID 和文件路径，然后调用 songService 的 updateSongUrl 方法进行更新。如果更新成功，则返回成功消息；否则，返回失败消息。
+
+SongController 是一个处理歌曲相关请求的控制器类，通过调用 songService 的相应方法来实现歌曲的添加、删除、查询和更新功能，并返回相应的结果消息。
+ */
 @RestController
 public class SongController {
 

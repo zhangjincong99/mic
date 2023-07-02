@@ -30,10 +30,11 @@ public interface SongMapper {
     int deleteSong(Integer id);
 
     List<Song> allSong();
-
+//    获取所有歌曲的列表，返回一个包含所有歌曲对象的列表。
     List<Song> songOfSingerId(Integer singerId);
-
+//    根据指定的歌手ID查询歌曲，返回一个包含符合条件的歌曲对象的列表。
     List<Song> songOfId(Integer id);
-
+//    根据指定的歌曲ID查询歌曲，返回一个包含符合条件的歌曲对象的列表。
     List<Song> songOfSingerName(String name);
+//    根据指定的歌手名查询歌曲，返回一个包含符合条件的歌曲对象的列表。
 }

@@ -8,6 +8,30 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/*
+addUser 方法用于新增用户。调用 consumerMapper.insertSelective(consumer) 方法将用户信息插入数据库，并返回插入的记录数。
+
+updateUserMsg 方法用于更新用户信息。调用 consumerMapper.updateUserMsg(consumer) 方法更新数据库中的用户信息，并返回更新的记录数。
+
+updatePassword 方法用于更新用户密码。调用 consumerMapper.updatePassword(consumer) 方法更新数据库中的用户密码，并返回更新的记录数。
+
+updateUserAvator 方法用于更新用户头像。调用 consumerMapper.updateUserAvator(consumer) 方法更新数据库中的用户头像路径，并返回更新的记录数。
+
+existUser 方法用于检查用户名是否存在。调用 consumerMapper.existUsername(username) 方法查询数据库中是否存在指定用户名的记录，并返回查询结果。
+
+veritypasswd 方法用于验证用户名和密码是否匹配。调用 consumerMapper.verifyPassword(username, password) 方法验证用户名和密码是否匹配，并返回验证结果。
+
+deleteUser 方法用于删除用户。调用 consumerMapper.deleteUser(id) 方法删除数据库中指定 ID 的用户记录，并返回删除的记录数。
+
+allUser 方法用于获取所有用户信息。调用 consumerMapper.allUser() 方法查询数据库中的所有用户记录，并返回查询结果。
+
+userOfId 方法用于获取指定 ID 的用户信息。调用 consumerMapper.userOfId(id) 方法查询数据库中指定 ID 的用户记录，并返回查询结果。
+
+loginStatus 方法用于获取指定用户名的用户信息。调用 consumerMapper.loginStatus(username) 方法查询数据库中指定用户名的用户记录，并返回查询结果。
+
+该类使用 @Autowired 注解将 ConsumerMapper 自动注入到 ConsumerServiceImpl 中，以便在服务类中可以直接调用 ConsumerMapper 的方法来操作数据库。
+ */
+
 @Service
 public class ConsumerServiceImpl implements ConsumerService {
 

@@ -26,6 +26,30 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/*
+以下是该类中的方法功能描述：
+
+addUser 方法用于用户注册。它从请求中获取用户的注册信息，创建 Consumer 对象，并调用 consumerService.addUser(consumer) 方法将用户信息添加到数据库中进行注册。
+
+loginStatus 方法用于判断用户登录状态。它从请求中获取用户名和密码，调用 consumerService.veritypasswd(username, password) 方法验证用户名和密码是否匹配。如果匹配成功，将用户名存入会话（Session）中，并返回登录成功的消息和用户信息。
+
+allUser 方法用于返回所有用户信息。调用 consumerService.allUser() 方法查询数据库中的所有用户记录，并返回查询结果。
+
+userOfId 方法用于返回指定 ID 的用户信息。从请求中获取用户 ID，调用 consumerService.userOfId(Integer.parseInt(id)) 方法查询数据库中指定 ID 的用户记录，并返回查询结果。
+
+deleteUser 方法用于删除用户。从请求中获取用户 ID，调用 consumerService.deleteUser(Integer.parseInt(id)) 方法删除数据库中指定 ID 的用户记录。
+
+updateUserMsg 方法用于更新用户信息。从请求中获取用户的修改信息，创建 Consumer 对象，并调用 consumerService.updateUserMsg(consumer) 方法更新数据库中的用户信息。
+
+updatePassword 方法用于更新用户密码。从请求中获取用户的原密码和新密码，验证原密码是否匹配，然后调用 consumerService.updatePassword(consumer) 方法更新数据库中的用户密码。
+
+updateUserPic 方法用于更新用户头像。从请求中获取上传的头像文件和用户 ID，将头像文件保存到指定路径，并调用 consumerService.updateUserAvator(consumer) 方法更新数据库中的用户头像路径。
+
+该类使用 @Autowired 注解将 ConsumerServiceImpl 自动注入到 ConsumerController 中，以便在控制器中可以直接调用 ConsumerServiceImpl 的方法来处理用户相关的业务逻辑。
+
+此外，还定义了一个内部静态类 MyPicConfig，用于配置静态资源的访问路径。它实现了 WebMvcConfigurer 接口，并重写了 addResourceHandlers 方法，将 /img/avatorImages/** 映射到指定的静态资源路径。
+ */
+
 @RestController
 public class ConsumerController {
 
@@ -50,7 +74,7 @@ public class ConsumerController {
         String username = req.getParameter("username").trim();
         String password = req.getParameter("password").trim();
         String sex = req.getParameter("sex").trim();
-        String phone_num = req.getParameter("phone_num").trim();
+        String phoneNum = req.getParameter("phoneNum").trim();
         String email = req.getParameter("email").trim();
         String birth = req.getParameter("birth").trim();
         String introduction = req.getParameter("introduction").trim();
@@ -72,10 +96,10 @@ public class ConsumerController {
         consumer.setUsername(username);
         consumer.setPassword(password);
         consumer.setSex(new Byte(sex));
-        if ("".equals(phone_num)) {
+        if ("".equals(phoneNum)) {
             consumer.setPhoneNum(null);
         } else {
-            consumer.setPhoneNum(phone_num);
+            consumer.setPhoneNum(phoneNum);
         }
 
         if ("".equals(email)) {
@@ -162,7 +186,7 @@ public class ConsumerController {
         String id = req.getParameter("id").trim();
         String username = req.getParameter("username").trim();
         String sex = req.getParameter("sex").trim();
-        String phone_num = req.getParameter("phone_num").trim();
+        String phoneNum = req.getParameter("phoneNum").trim();
         String email = req.getParameter("email").trim();
         String birth = req.getParameter("birth").trim();
         String introduction = req.getParameter("introduction").trim();
@@ -180,7 +204,7 @@ public class ConsumerController {
         consumer.setId(Integer.parseInt(id));
         consumer.setUsername(username);
         consumer.setSex(new Byte(sex));
-        consumer.setPhoneNum(phone_num);
+        consumer.setPhoneNum(phoneNum);
         consumer.setEmail(email);
         consumer.setIntroduction(introduction);
         consumer.setLocation(location);

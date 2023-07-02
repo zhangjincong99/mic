@@ -185,3 +185,26 @@
     </build>
 
 </project>
+
+
+<!--parent：指定了项目的父级依赖，这里使用了Spring Boot的starter-parent作为父级依赖，指定了Spring Boot的版本号。-->
+
+<!--groupId：项目的组织ID，用于唯一标识项目的组织。-->
+
+<!--artifactId：项目的模块ID，用于唯一标识项目的模块。-->
+
+<!--version：项目的版本号。-->
+
+<!--name：项目的名称。-->
+
+<!--description：项目的描述。-->
+
+<!--properties：项目的属性配置，包括源文件编码、Java版本等。-->
+
+<!--dependencies：项目的依赖项配置，包括Spring Boot的Web启动器、测试依赖、MyBatis Generator等。-->
+
+<!--repositories：项目的仓库配置，指定了使用阿里云的镜像仓库。-->
+
+<!--build：项目的构建配置，包括插件配置。-->
+
+<!--plugins：插件配置，包括了Maven Surefire插件和MyBatis Generator插件（注释掉了）等。-->

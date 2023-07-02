@@ -3,6 +3,7 @@ package com.example.yin.domain;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import java.util.Date;
+//这行代码导入了java.util.Date类，它是Java中用于表示日期和时间的类
 
 public class Collect {
     private Integer id;

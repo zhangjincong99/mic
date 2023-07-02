@@ -15,5 +15,11 @@ public interface CommentService {
     List<Comment> commentOfSongId(Integer songId);
 
     List<Comment> commentOfSongListId(Integer songListId);
-
+/*
+addComment：添加新评论。
+updateCommentMsg：更新现有评论的消息。
+deleteComment：根据评论ID删除评论。
+commentOfSongId：获取与指定歌曲ID相关的评论列表。
+commentOfSongListId：获取与指定歌单ID相关的评论列表。
+ */
 }

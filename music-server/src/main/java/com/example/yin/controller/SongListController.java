@@ -20,6 +20,28 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+
+/*
+SongListController 类是一个基于 Spring MVC 的控制器，用于处理与歌单相关的 HTTP 请求。以下是该类中声明的方法的解释：
+
+MyPicConfig：这是一个内部静态类，用于配置静态资源的处理。在这里，它配置了 /img/songListPic/** 路径下的资源映射到具体的文件路径。
+
+addSongList：该方法用于添加歌单。它接收一个 HttpServletRequest 对象作为参数，从请求中获取歌单的标题、介绍、风格等信息，并调用 songListService 的 addSongList 方法将歌单添加到数据库中。根据操作的结果返回相应的成功或失败消息。
+
+deleteSongList：该方法用于删除歌单。它接收一个 HttpServletRequest 对象作为参数，从请求中获取要删除的歌单的 ID，并调用 songListService 的 deleteSongList 方法删除对应的歌单。根据操作的结果返回相应的成功或失败消息。
+
+allSongList：该方法用于获取所有歌单的详细信息。它不接收任何参数，直接调用 songListService 的 allSongList 方法从数据库中获取所有歌单的信息，并返回一个包含所有歌单的成功消息。
+
+songListOfLikeTitle：该方法用于根据标题关键字搜索符合条件的歌单。它接收一个 HttpServletRequest 对象作为参数，从请求中获取标题关键字，并调用 songListService 的 likeTitle 方法根据标题关键字搜索歌单。返回一个包含符合条件的歌单的成功消息。
+
+songListOfStyle：该方法用于根据风格关键字搜索符合条件的歌单。它接收一个 HttpServletRequest 对象作为参数，从请求中获取风格关键字，并调用 songListService 的 likeStyle 方法根据风格关键字搜索歌单。返回一个包含符合条件的歌单的成功消息。
+
+updateSongListMsg：该方法用于更新歌单的信息。它接收一个 HttpServletRequest 对象作为参数，从请求中获取歌单的 ID、标题、介绍、风格等信息，并调用 songListService 的 updateSongListMsg 方法更新数据库中对应的歌单信息。根据操作的结果返回相应的成功或失败消息。
+
+updateSongListPic：该方法用于更新歌单的图片。它接收一个 MultipartFile 对象和一个歌单的 ID 作为参数，从请求中获取上传的图片文件和歌单的 ID。首先将图片文件保存到指定的路径下，然后调用 songListService 的 updateSongListImg 方法更新数据库中对应的歌单的图片信息。根据操作的结果返回相应的成功或失败消息。
+
+这些方法通过接收不同的 HTTP 请求，并调用相应的 songListService 方法来实现对歌单的添加、删除、查询和更新的功能，并根据操作的结果返回相应的消息。
+ */
 @RestController
 public class SongListController {
 

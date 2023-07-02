@@ -16,6 +16,16 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
 
+/*
+这是一个评论控制器类，处理与评论相关的请求。下面是每个方法的功能描述：
+
+addComment：提交评论。从请求中获取用户ID、类型、歌单ID或歌曲ID、评论内容等信息，并调用评论服务层的方法进行添加评论操作。
+deleteComment：删除评论。从请求中获取评论ID，并调用评论服务层的方法进行删除评论操作。
+commentOfSongId：获取指定歌曲ID的评论列表。从请求中获取歌曲ID，并调用评论服务层的方法获取与该歌曲ID相关的评论列表。
+commentOfSongListId：获取指定歌单ID的评论列表。从请求中获取歌单ID，并调用评论服务层的方法获取与该歌单ID相关的评论列表。
+commentOfLike：点赞评论。从请求中获取评论ID和点赞数，并调用评论服务层的方法更新评论信息，实现点赞功能。
+ */
+
 @RestController
 public class CommentController {
     @Autowired

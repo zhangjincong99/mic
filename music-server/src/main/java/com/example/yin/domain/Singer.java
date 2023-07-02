@@ -80,4 +80,8 @@ public class Singer {
     public String toString() {
         return ToStringBuilder.reflectionToString(this);
     }
+//    这段代码是一个重写的toString()方法。在toString()方法中，
+//    使用ToStringBuilder类的reflectionToString()方法生成对象的字符串表示形式。
+//    reflectionToString()方法会根据对象的字段和值自动生成字符串，它会遍历对象的所有非静态字段，
+//    并将它们的名称和值拼接成一个字符串。这样可以方便地查看对象的属性值，用于调试和日志记录。
 }

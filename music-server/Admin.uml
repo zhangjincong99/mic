@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.yin.domain.Admin</OriginalElement>
+  <nodes>
+    <node x="514.0" y="0.0">com.example.yin.domain.Comment</node>
+    <node x="0.0" y="1061.0">com.example.yin.domain.RankList</node>
+    <node x="767.0" y="0.0">com.example.yin.domain.Singer</node>
+    <node x="734.0" y="953.0">com.example.yin.domain.Admin</node>
+    <node x="0.0" y="0.0">com.example.yin.domain.Consumer</node>
+    <node x="1024.0" y="0.0">com.example.yin.domain.Collect</node>
+    <node x="257.0" y="0.0">com.example.yin.domain.Song</node>
+    <node x="224.0" y="1084.0">com.example.yin.domain.ListSong</node>
+    <node x="477.0" y="953.0">com.example.yin.domain.SongList</node>
+    <node x="133.0" y="953.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.yin.domain.RankList" target="java.io.Serializable">
+      <point x="0.0" y="-166.5" />
+      <point x="102.0" y="1036.0" />
+      <point x="174.0" y="1036.0" />
+      <point x="-41.0" y="29.0" />
+    </edge>
+    <edge source="com.example.yin.domain.ListSong" target="java.io.Serializable">
+      <point x="0.0" y="-143.5" />
+      <point x="328.0" y="1036.0" />
+      <point x="256.0" y="1036.0" />
+      <point x="41.0" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4158415841584159" x="615.9999999999998" y="686.9999999999999" />
+  <SelectedNodes>
+    <node>com.example.yin.domain.Consumer</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

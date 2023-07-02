@@ -29,6 +29,7 @@ public class CommentServiceImpl implements CommentService{
         return commentMapper.deleteComment(id) >0 ?true:false;
     }
 
+//    获取特定歌曲ID下的评论列表。
     @Override
     public List<Comment> commentOfSongId(Integer songId)
 
@@ -36,6 +37,7 @@ public class CommentServiceImpl implements CommentService{
         return commentMapper.commentOfSongId(songId);
     }
 
+//    方法获取特定歌单ID下的评论列表。
     @Override
     public List<Comment> commentOfSongListId(Integer songListId)
 

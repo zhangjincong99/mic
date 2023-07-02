@@ -8,6 +8,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebMvcConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
+        //用于配置跨域资源共享（CORS）。通过CorsRegistry对象的addMapping方法，
+        // 可以指定允许跨域访问的路径、允许的来源、允许的方法和允许的请求头。/
+
         registry.addMapping("/**")
                 // 设置允许跨域请求的域名
                 .allowedOriginPatterns("*")
