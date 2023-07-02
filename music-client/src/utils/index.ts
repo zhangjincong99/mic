@@ -34,6 +34,7 @@ export function parseLyric(text) {
     return [[0, text]];
   }
 
+  // 不满足  去掉前面不正确的行
   while (!pattern.test(lines[0])) {
     lines = lines.slice(1);
   }

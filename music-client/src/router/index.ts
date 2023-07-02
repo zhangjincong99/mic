@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+// 包括createRouter用于创建路由实例，createWebHistory用于创建基于浏览器历史记录的路由模式，以及RouteRecordRaw用于声明路由配置的类型。
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/:pathMatch(.*)*",
@@ -51,6 +52,13 @@ const routes: Array<RouteRecordRaw> = [
         name: "singer",
         component: () => import("@/views/singer/Singer.vue"),
       },
+
+      {
+        path: "/paihangbang",
+        name: "paihangbang",
+        component: () => import("@/views/paihangbang.vue"),
+      },
+
       {
         path: "/singer-detail/:id",
         name: "singer-detail",

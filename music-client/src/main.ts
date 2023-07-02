@@ -20,3 +20,4 @@ declare module "@vue/runtime-core" {
 }
 
 createApp(App).use(store).use(router).use(ElementPlus).mount("#app");
+// 它通过createApp函数创建一个Vue应用程序实例，并通过.use()方法依次使用导入的插件和模块。最后，通过.mount("#app")将应用程序挂载到具有id为app的HTML元素上。

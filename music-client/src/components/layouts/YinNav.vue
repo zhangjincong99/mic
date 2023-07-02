@@ -1,6 +1,7 @@
 <template>
   <ul class="yin-nav">
-    <li v-for="(item, index) in styleList" :key="index" :class="{ active: item.name == activeName }" @click="handleChangeView(item)">
+    <li v-for="(item, index) in styleList" :key="index" :class="{ active: item.name == activeName }"
+      @click="handleChangeView(item)">
       {{ item.name }}
     </li>
   </ul>
@@ -9,16 +10,23 @@
 <script lang="ts">
 import { defineComponent, getCurrentInstance } from "vue";
 
+interface StyleItem {
+  name: string;
+}
+
 export default defineComponent({
   props: {
-    styleList: Array,
+    styleList: {
+      type: Array as () => Array<StyleItem>,
+      required: true,
+    },
     activeName: String,
   },
   emits: ["click"],
   setup() {
     const { proxy } = getCurrentInstance();
 
-    function handleChangeView(val) {
+    function handleChangeView(val: StyleItem) {
       proxy.$emit("click", val);
     }
     return {
@@ -33,6 +41,7 @@ export default defineComponent({
 
 .yin-nav {
   width: 100%;
+
   li {
     line-height: 2rem;
     font-size: 1rem;
@@ -40,6 +49,7 @@ export default defineComponent({
     border-bottom: none;
     cursor: pointer;
   }
+
   li.active {
     color: $color-black;
     font-weight: 600;
@@ -60,5 +70,4 @@ export default defineComponent({
       margin: 0.3rem 0.4rem;
     }
   }
-}
-</style>
+}</style>

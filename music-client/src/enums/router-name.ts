@@ -12,5 +12,6 @@ export const enum RouterName {
   Search = "/search",
   Lyric = "/lyric",
   Error = "/404",
+  paihangbang = "/paihangbang",
   SignOut = "0",
 }

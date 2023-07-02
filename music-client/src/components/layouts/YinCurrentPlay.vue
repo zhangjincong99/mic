@@ -1,3 +1,5 @@
+<!-- 这段代码实现了一个当前播放列表的展示和点击播放功能，通过 Vuex store 中的数据来获取和更新播放列表的内容和状态，并与其他组件进行交互。 -->
+
 <template>
   <transition name="aside-fade">
     <div class="yin-current-play" v-if="showAside">

@@ -15,39 +15,58 @@ export default function () {
   const store = useStore();
   const token = computed(() => store.getters.token);
 
-  function getUserSex(sex) {
+  // 获取用户性别
+  function getUserSex(sex: number): string | undefined {
     if (sex === 0) {
       return "女";
     } else if (sex === 1) {
       return "男";
     }
+    return undefined;
   }
 
   // 获取歌曲名
-  function getSongTitle(str) {
+  function getSongTitle(str: string): string {
     return str.split("-")[1];
   }
 
   // 获取歌手名
-  function getSingerName(str) {
+  function getSingerName(str: string): string {
     return str.split("-")[0];
   }
 
-  // 判断登录状态
-  function checkStatus(status?: boolean) {
+  // 检查登录状态
+  function checkStatus(status?: boolean): boolean {
     if (!token.value) {
-      if (status !== false)
+      if (status !== false) {
         (proxy as any).$message({
           message: "请先登录",
           type: "warning",
         });
+      }
       return false;
     }
     return true;
   }
 
-  // 播放
-  function playMusic({ id, url, pic, index, name, lyric, currentSongList }) {
+  // 播放音乐
+  function playMusic({
+    id,
+    url,
+    pic,
+    index,
+    name,
+    lyric,
+    currentSongList,
+  }: {
+    id: string;
+    url: string;
+    pic: string;
+    index: number;
+    name: string;
+    lyric: string;
+    currentSongList: any[];
+  }): void {
     const songTitle = getSongTitle(name);
     const singerName = getSingerName(name);
     proxy.$store.dispatch("playMusic", {
@@ -62,8 +81,14 @@ export default function () {
     });
   }
 
-  // 下载
-  async function downloadMusic({ songUrl, songName }) {
+  // 下载音乐
+  async function downloadMusic({
+    songUrl,
+    songName,
+  }: {
+    songUrl: string;
+    songName: string;
+  }): Promise<void> {
     if (!songUrl) {
       (proxy as any).$message({
         message: "下载链接为空！",
@@ -73,24 +98,30 @@ export default function () {
       return;
     }
 
-    const result = (await HttpManager.downloadMusic(songUrl)) as ResponseBody;
+    const result = (await HttpManager.downloadMusic(
+      songUrl
+    )) as ResponseBody;
+
     const eleLink = document.createElement("a");
     eleLink.download = `${songName}.mp3`;
     eleLink.style.display = "none";
-    // 字符内容转变成 blob 地址
     const blob = new Blob([result.data]);
     eleLink.href = URL.createObjectURL(blob);
-    document.body.appendChild(eleLink); // 触发点击
+    document.body.appendChild(eleLink);
     eleLink.click();
-    document.body.removeChild(eleLink); // 移除
+    document.body.removeChild(eleLink);
   }
 
-  // 导航索引
-  function changeIndex(value) {
+  // 更改导航索引
+  function changeIndex(value: string | number): void {
     proxy.$store.commit("setActiveNavName", value);
   }
+
   // 路由管理
-  function routerManager(routerName: string | number, options: routerOptions) {
+  function routerManager(
+    routerName: string | number,
+    options: routerOptions
+  ): void {
     switch (routerName) {
       case RouterName.Search:
         proxy.$router.push({ path: options.path, query: options.query });
@@ -114,7 +145,8 @@ export default function () {
     }
   }
 
-  function goBack(step = -1) {
+  // 返回上一页
+  function goBack(step = -1): void {
     proxy.$router.go(step);
   }
 

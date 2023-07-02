@@ -1,3 +1,18 @@
+<!-- 上述代码是一个音乐播放器的 Vue 组件，实现了音乐播放、暂停、切换、进度控制等功能。以下是代码的主要功能和实现：
+
+通过 import 导入了需要的依赖和模块。
+使用 defineComponent 定义了一个 Vue 组件。
+在组件的 setup 部分，通过 useStore 获取了 Vuex 的 store 实例，并使用 mixin 混入了一些通用的方法。
+定义了一些响应式的变量，如 isCollection 表示是否收藏、userId 表示用户 ID、songId 表示音乐 ID 等，并在 watch 部分对这些变量进行监视。
+在 initCollection 方法中，根据用户 ID 和音乐 ID，初始化收藏状态，并根据后台返回的数据更新 isCollection 的值。
+在 changeCollection 方法中，根据用户 ID、音乐 ID 和收藏状态，调用后台接口来设置或取消收藏，并根据后台返回的数据更新 isCollection 的值。
+在 onMounted 部分，在组件挂载后调用 initCollection 方法来初始化收藏状态。
+在 computed 部分，使用 mapGetters 获取了一些 Vuex store 中的状态和计算属性。
+在 watch 部分，监听了一些状态的变化，如播放状态、音量、当前播放时间等，并相应地更新界面。
+在 methods 部分，定义了一些方法，如切换侧边栏、切换播放状态、切换播放模式、上一首、下一首等，并通过调用 Vuex store 中的相关方法来实现对应的功能。
+在模板部分，使用了 Vue 的指令、事件绑定和条件渲染等功能来实现界面的交互和展示。
+总体来说，这段代码实现了一个音乐播放器的界面和功能，包括播放控制、进度条、收藏、下载等操作，并与后台接口进行交互来获取和更新相关数据。 -->
+
 <template>
   <div class="play-bar" :class="{ show: !toggle }">
     <div class="fold" :class="{ turn: toggle }">
@@ -261,3 +276,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "@/assets/css/yin-play-bar.scss";
 </style>
+
+
+
