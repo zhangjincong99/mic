@@ -1,0 +1,27 @@
+2023-06-12 19:05:58 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 11.0.18 on DESKTOP-LCUE70N with PID 17272 (E:\javaideaiu\class22\mic\music-server\target\classes started by 86158 in E:\javaideaiu\class22\mic\music-server)
+2023-06-12 19:05:58 INFO [com.example.yin.YinMusicApplication]: No active profile set, falling back to default profiles: default
+2023-06-12 19:05:58 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-12 19:05:58 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-12 19:05:59 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8888 (http)
+2023-06-12 19:05:59 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 1078 ms
+2023-06-12 19:05:59 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2023-06-12 19:05:59 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8888 (http) with context path ''
+2023-06-12 19:05:59 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 1.666 seconds (JVM running for 2.664)
+2023-06-12 19:10:24 INFO [org.springframework.web.servlet.DispatcherServlet]: Initializing Servlet 'dispatcherServlet'
+2023-06-12 19:10:24 INFO [org.springframework.web.servlet.DispatcherServlet]: Completed initialization in 16 ms
+2023-06-12 19:10:24 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Starting...
+2023-06-12 19:10:25 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Start completed.
+2023-06-12 20:04:38 WARN [com.zaxxer.hikari.pool.HikariPool]: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m42s437ms359µs899ns).
+2023-06-12 20:26:06 WARN [com.zaxxer.hikari.pool.HikariPool]: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m27s324ms358µs299ns).
+2023-06-12 21:47:16 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown initiated...
+2023-06-12 21:47:16 INFO [com.zaxxer.hikari.HikariDataSource]: HikariPool-1 - Shutdown completed.
+2023-06-12 21:47:16 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-12 21:47:16 INFO [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor]: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-12 21:47:16 INFO [com.example.yin.YinMusicApplication]: Starting YinMusicApplication using Java 11.0.18 on DESKTOP-LCUE70N with PID 17272 (E:\javaideaiu\class22\mic\music-server\target\classes started by 86158 in E:\javaideaiu\class22\mic\music-server)
+2023-06-12 21:47:16 INFO [com.example.yin.YinMusicApplication]: No active profile set, falling back to default profiles: default
+2023-06-12 21:47:16 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat initialized with port(s): 8888 (http)
+2023-06-12 21:47:16 INFO [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext]: Root WebApplicationContext: initialization completed in 460 ms
+2023-06-12 21:47:17 INFO [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer]: LiveReload server is running on port 35729
+2023-06-12 21:47:17 INFO [org.springframework.boot.web.embedded.tomcat.TomcatWebServer]: Tomcat started on port(s): 8888 (http) with context path ''
+2023-06-12 21:47:17 INFO [com.example.yin.YinMusicApplication]: Started YinMusicApplication in 0.655 seconds (JVM running for 9679.761)
+2023-06-12 21:47:17 INFO [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener]: Condition evaluation unchanged
