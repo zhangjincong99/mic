@@ -56,7 +56,7 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/paihangbang",
         name: "paihangbang",
-        component: () => import("@/views/paihangbang.vue"),
+        component: () => import("@/views/song-sheet/paihangbang.vue"),
       },
 
       {
