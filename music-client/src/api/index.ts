@@ -34,7 +34,7 @@ const HttpManager = {
   // 通过性别对歌手分类
   getSingerOfSex: (sex) => get(`singer/sex/detail?sex=${sex}`),
 
-  // =======================> 收藏 API
+  // =======================> 收藏 API   s
   // 返回的指定用户ID的收藏列表
   getCollectionOfUser: (userId) => get(`collection/detail?userId=${userId}`),
   // 添加收藏的歌曲 type: 0 代表歌曲， 1 代表歌单

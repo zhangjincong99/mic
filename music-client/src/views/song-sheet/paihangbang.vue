@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Song List Ranking</h1>
     <table>
       <thead>
@@ -72,3 +72,20 @@ export default {
   },
 };
 </script>
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+  /* 添加滚动条以查看全部内容 */
+}
+
+
+table {
+  margin-top: 20px;
+  /* 根据需要调整表格与标题之间的间距 */
+}
+</style>

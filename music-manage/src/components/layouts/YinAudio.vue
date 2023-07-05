@@ -1,67 +1,39 @@
 <template>
-  <!-- <audio controls="controls" preload="true" v-if="url" :ref="player" :src="attachImageUrl(url)" @canplay="startPlay" -->
-  <audio :controls="true" preload="true" v-if="url" :ref="player" :src="attachImageUrl(url)" @canplay="startPlay"
-    @ended="ended"></audio>
-
-  <!-- @ended="ended"></audio> -->
+  <div>
+    <audio ref="audioElement"></audio>
+    <button @click="togglePlay">Toggle Play</button>
+  </div>
 </template>
 
-<script lang="ts">
-import { nextTick } from 'vue';
-import { defineComponent, getCurrentInstance, computed, watch, ref } from "vue";
-import { useStore } from "vuex";
-import { HttpManager } from "@/api";
+<script>
+import { nextTick, ref } from 'vue';
 
-export default defineComponent({
+export default {
   setup() {
-    const { proxy } = getCurrentInstance();
-    const store = useStore();
-    const divRef = ref<HTMLAudioElement>();
-    const player = (el) => {
-      divRef.value = el;
-    };
-
-    const url = computed(() => store.getters.url); // 音乐链接
-    const isPlay = computed(() => store.getters.isPlay); // 播放状态
-    // 监听播放还是暂停
-    watch(isPlay, () => {
-      togglePlay();
-    });
-
+    const audioRef = ref(null);
+  
     // 开始/暂停
     function togglePlay() {
       nextTick(() => {
-        const audioElement = divRef.value;
+        const audioElement = audioRef.value;
         if (audioElement) {
-          isPlay.value ? audioElement.play() : audioElement.pause();
+          if (audioElement.paused) {
+            audioElement.play().catch((error) => {
+              console.error("Failed to play audio:", error);
+            });
+          } else {
+            audioElement.pause();
+          }
         }
       });
     }
 
-    // 获取歌曲链接后准备播放
-    function startPlay() {
-      nextTick(() => {
-        const audioElement = divRef.value;
-        if (audioElement) {
-          audioElement.play();
-        }
-      });
-    }
-
-    // 音乐播放结束时触发
-    function ended() {
-      proxy.$store.commit("setIsPlay", false);
-    }
     return {
-      url,
-      isPlay,
-      player,
-      startPlay,
-      ended,
-      attachImageUrl: HttpManager.attachImageUrl,
+      audioRef,
+      togglePlay
     };
-  },
-});
+  }
+};
 </script>
 
 <style>
