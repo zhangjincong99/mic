@@ -2,85 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5983ee94-5de0-4fcd-afd8-69c5fa6e22e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../music-client/src/assets/css/yin-current-play.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/assets/css/yin-current-play.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring音乐网站小组记录.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../一、项目简介  徐艳华.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../徐艳华  概要设计前后端交互.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../徐艳华 协作图概要设计.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../第5次会议 徐艳华.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinAudio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinAudio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinCurrentPlay.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinCurrentPlay.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinHeaderNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinHeaderNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinPlayBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinPlayBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/components/layouts/YinScrollTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/components/layouts/YinScrollTop.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/mixins/mixin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/mixins/mixin.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/views/YinContainer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/views/YinContainer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/src/views/error/404.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/src/views/error/404.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-client/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../music-client/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/api/request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/api/request.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/components/dialog/YinDelDialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/components/dialog/YinDelDialog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinAside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinAside.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinAudio.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinAudio.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/components/layouts/YinHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/ConsumerPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/ConsumerPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/InfoPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/InfoPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/SingerPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/SingerPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/SongListPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/SongListPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../music-manage/src/views/SongPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../music-manage/src/views/SongPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/YinMusicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/YinMusicApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/common/ErrorMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/common/ErrorMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/common/FatalMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/common/FatalMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/common/SuccessMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/common/SuccessMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/common/WarningMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/common/WarningMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/config/WebCharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/config/WebCharacterEncodingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/constant/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/CollectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/CollectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/ListSongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/ListSongController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../music-server.7z" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/MusicWebsite" beforeDir="false" afterPath="$PROJECT_DIR$/logs/MusicWebsite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/RankListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/RankListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SingerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SingerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SongController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SongController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SongListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/controller/SongListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/CollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/CollectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/ConsumerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/ConsumerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/ListSongMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/ListSongMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/RankListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/RankListMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SingerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SingerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SongListMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SongListMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SongMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/dao/SongMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Collect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Collect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/ListSong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/ListSong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Singer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/domain/Singer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/CollectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/CollectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/ConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/ConsumerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/ListSongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/ListSongService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/RankListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/RankListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SingerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SingerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SongListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SongListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/SongService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/CollectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/CollectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/ConsumerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/ConsumerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/ListSongServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/ListSongServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/RankListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/RankListServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SingerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SingerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SongListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SongListServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SongServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/yin/service/impl/SongServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/yin/YinMusicApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/yin/YinMusicApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/yin/controller/RankListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/yin/controller/RankListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../概要设计.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../概要设计.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../需求规格.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../需求规格.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../需求设计.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/spring照片" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -137,7 +74,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
   </component>
-  <component name="RunManager" selected="Spring Boot.YinMusicApplication">
+  <component name="RunManager" selected="Application.YinMusicApplication">
     <configuration name="YinMusicApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.yin.YinMusicApplication" />
       <module name="yin" />
@@ -167,6 +104,22 @@
         <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="YinMusicApplicationTests.consumerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="yin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.yin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.yin" />
+      <option name="MAIN_CLASS_NAME" value="com.example.yin.YinMusicApplicationTests" />
+      <option name="METHOD_NAME" value="consumerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="YinMusicApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="yin" />
       <extension name="coverage">
@@ -182,8 +135,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.YinMusicApplication" />
         <item itemvalue="Application.YinMusicApplication" />
+        <item itemvalue="JUnit.YinMusicApplicationTests.consumerTest" />
+        <item itemvalue="Spring Boot.YinMusicApplication" />
         <item itemvalue="JUnit.YinMusicApplicationTests" />
       </list>
     </recent_temporary>
@@ -236,6 +190,13 @@
       <workItem from="1688024334316" duration="7161000" />
       <workItem from="1688042198783" duration="3010000" />
       <workItem from="1688173131207" duration="4460000" />
+      <workItem from="1688282296188" duration="7350000" />
+      <workItem from="1688383622779" duration="1229000" />
+      <workItem from="1688441687863" duration="15903000" />
+      <workItem from="1688537668351" duration="6404000" />
+      <workItem from="1688555648765" duration="2562000" />
+      <workItem from="1688571017419" duration="805000" />
+      <workItem from="1688604062221" duration="2537000" />
     </task>
     <servers />
   </component>
@@ -247,46 +208,46 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1687150758373" />
-    <state x="504" y="15" key="Diagram.Print.Preview.Dialog" timestamp="1687870730046">
+    <state x="504" y="15" key="Diagram.Print.Preview.Dialog" timestamp="1688539404978">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="504" y="15" key="Diagram.Print.Preview.Dialog/0.0.1536.864@0.0.1536.864" timestamp="1687870730046" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1687869751196">
+    <state x="504" y="15" key="Diagram.Print.Preview.Dialog/0.0.1536.864@0.0.1536.864" timestamp="1688539404978" />
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1688543579925">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1687869751196" />
-    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1688046887287">
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1688543579925" />
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom" timestamp="1688574650155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1688046887287">
+    <state width="1493" height="269" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1688574650155" />
+    <state width="1493" height="269" key="GridCell.Tab.0.center" timestamp="1688574650155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1688046887287">
+    <state width="1493" height="269" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1688574650155" />
+    <state width="1493" height="269" key="GridCell.Tab.0.left" timestamp="1688574650155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1688046887287">
+    <state width="1493" height="269" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1688574650155" />
+    <state width="1493" height="269" key="GridCell.Tab.0.right" timestamp="1688574650155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.1.bottom" timestamp="1688046887287">
+    <state width="1493" height="269" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1688574650155" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1688478764392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.1.center" timestamp="1688046887287">
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1688478764392" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1688478764392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.1.left" timestamp="1688046887287">
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1688478764392" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1688478764392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
-    <state width="1493" height="267" key="GridCell.Tab.1.right" timestamp="1688046887287">
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1688478764392" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1688478764392">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1688046887287" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1688478764392" />
     <state width="1493" height="277" key="GridCell.Tab.2.bottom" timestamp="1687610483781">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -327,10 +288,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="349" y="87" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.864@0.0.1536.864" timestamp="1686630074070" />
-    <state x="548" y="241" width="439" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1688043901119">
+    <state x="548" y="241" width="439" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1688460925301">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="548" y="241" width="439" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.864@0.0.1536.864" timestamp="1688043901119" />
+    <state x="548" y="241" width="439" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.864@0.0.1536.864" timestamp="1688460925301" />
+    <state x="610" y="203" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1688459231591">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="610" y="203" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1688459231591" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1687347355058">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

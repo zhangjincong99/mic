@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.example.yin.controller.SingerController</OriginalElement>
+  <nodes>
+    <node x="0.0" y="110.0">com.example.yin.controller.SingerController</node>
+    <node x="69.0" y="0.0">org.springframework.web.bind.annotation.RestController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.yin.controller.SingerController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="0.0" y="-99.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="160.5" y="175.5" />
+  <SelectedNodes>
+    <node>com.example.yin.controller.SingerController</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

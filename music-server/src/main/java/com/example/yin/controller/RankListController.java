@@ -39,11 +39,31 @@ public class RankListController {
         }
     }
 
+//    @RequestMapping(value = "/rankList", method = RequestMethod.GET)
+//    public Object rankOfSongListId(HttpServletRequest req) {
+//        String songListId = req.getParameter("songListId");
+//
+//        return new SuccessMessage<>(null, rankListService.rankOfSongListId(Long.parseLong(songListId))).getMessage();
+//    }
+
     @RequestMapping(value = "/rankList", method = RequestMethod.GET)
     public Object rankOfSongListId(HttpServletRequest req) {
         String songListId = req.getParameter("songListId");
 
-        return new SuccessMessage<>(null, rankListService.rankOfSongListId(Long.parseLong(songListId))).getMessage();
+        // 检查参数是否为空
+        if (songListId == null || songListId.isEmpty()) {
+            return new ErrorMessage("参数不能为空").getMessage();
+        }
+
+        try {
+            // 将参数转换为long类型
+            long songListIdLong = Long.parseLong(songListId);
+
+            // 调用服务方法并返回结果
+            return new SuccessMessage<>(null, rankListService.rankOfSongListId(songListIdLong)).getMessage();
+        } catch (NumberFormatException e) {
+            return new ErrorMessage("参数格式错误").getMessage();
+        }
     }
 
     //    @RequestMapping(value = "/rankList/user", method = RequestMethod.GET)
